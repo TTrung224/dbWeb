@@ -30,8 +30,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
 </head>
 <body>
-    
+    <input id="input-picker"/>
+    <script>
+        mobiscroll.datepicker('#input-picker', {
+            controls: ['calendar','time'],
+            touchUi: true,
+            timeFormat: 'H:mm'
+        });
+    </script>
 </body>
 </html>
