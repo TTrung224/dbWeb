@@ -1,0 +1,60 @@
+/* login page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b4eaf4;
+}
+
+.main .slide-show img{
+    width: 400px;
+}
+
+.main .login-box .login-form{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(134, 134, 134);
+    padding: 10px;
+    background-color: #45a8bd;
+}
+
+.login-box .form-inputs{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-box .form-inputs input{
+    margin: 8px 0px 0px 0px;
+    padding: 4px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(134, 134, 134);
+}
+
+.login-box .btn-inputs button{
+    width: 100%;
+    padding: 4px;
+    margin: 8px 0px 0px 0px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(134, 134, 134);
+}
+
+.login-box .signup-link{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(134, 134, 134);
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #45a8bd;
+}
