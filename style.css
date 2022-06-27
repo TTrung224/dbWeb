@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .main{
@@ -10,7 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b4eaf4;
 }
 
 .main .slide-show img{
@@ -18,43 +18,58 @@
 }
 
 .main .login-box .login-form{
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(134, 134, 134);
+    border-radius: 10px;
+    border-style: hidden;
     padding: 10px;
-    background-color: #45a8bd;
+    background-color: #97dae7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .login-box .form-inputs{
     display: flex;
     flex-direction: column;
-    
+    height: 100px;
+
 }
 
 .login-box .form-inputs input{
-    margin: 8px 0px 0px 0px;
-    padding: 4px;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(134, 134, 134);
+    font-size: large;
+    margin: 12px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: hidden;
 }
 
 .login-box .btn-inputs button{
+    color: #2d374e;
+    font-size: large; 
     width: 100%;
     padding: 4px;
     margin: 8px 0px 0px 0px;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(134, 134, 134);
+    border-radius: 10px;
+    border-style:hidden;
+    background-color: #5ec6db;
 }
 
 .login-box .signup-link{
-    border-style: solid;
+    font-size: large;
+    text-align:center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    border-style:hidden;
     border-width: 1px;
-    border-color: rgb(134, 134, 134);
+    border-radius: 10px;    
     padding: 10px;
-    margin-top: 8px;
-    background-color: #45a8bd;
+    margin-top: 20px;
+    background-color: #97dae7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-box .signup-link a:link {
+    color: #2d374e;
+}
+.login-box .signup-link a:hover {
+    color: #ffffff;
+}
+.login-box .signup-link a:visited {
+    color: #2d374e;
 }
