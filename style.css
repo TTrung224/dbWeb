@@ -1,12 +1,13 @@
 /* login page */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
 }
-
+/* Body */
 .main{
+    font-family: 'JetBrains Mono', monospace;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,9 +15,22 @@
 }
 
 .main .slide-show img{
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
-
+.logo-login {
+    justify-content: center;
+    display: flex;
+}
+.logo-login img{
+    margin: auto;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 .main .login-box .login-form{
     border-radius: 10px;
     border-style: hidden;
@@ -70,6 +84,35 @@
 .login-box .signup-link a:hover {
     color: #ffffff;
 }
-.login-box .signup-link a:visited {
-    color: #2d374e;
+/* Footer */
+.footer {
+    background-image: url("Assets/footer.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Logo */
+.footer .links .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .fa:hover {
+    opacity: 0.5;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
