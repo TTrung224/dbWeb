@@ -2,8 +2,8 @@
 session_start();
 require("functions.php");
 
-$email = "test@gmail.com";
-$password = "test1";
+$email = "test1@gmail.com";
+$password = "testing";
 
 $email = formatInput($email);
 $email = strtolower($email);
@@ -40,11 +40,11 @@ if ($email != "" && $password != ""){
 //     if ($email != "" && $password != ""){
         
 //         $connection = dbConnect();
-//         $query = "SELECT * FROM acc WHERE email=$email";
+//         $query = "SELECT * FROM acc WHERE email='$email'";
 //         $result = mysqli_query($connection,$query);
 
 //         if (mysqli_num_rows($result) > 0) {
-//             $account = mysqli_fetch_all($result, $MYSQLI_ASSOC)[0];
+//             $account = mysqli_fetch_all($result, MYSQLI_ASSOC)[0];
 //             if($account["email"] == $email && password_verify($password, $account["password"])){
 //                 $validated = true;
 //             }
@@ -58,6 +58,6 @@ if ($email != "" && $password != ""){
 //             header("Location: ../index.php");
 //         }
 //     } else{
-//         header("Location: ../login_page.php");
+//         header("Location: ../loginPage.php");
 //     }
 // }
