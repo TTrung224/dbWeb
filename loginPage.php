@@ -25,7 +25,7 @@
                 <form action="#" method="post">
                     <div class="form-inputs">
                         <input type="text" id="email" placeholder="Email" name="email">
-                        <input type="password" id="password" placeholder="Password">
+                        <input type="password" id="password" placeholder="Password" name="password">
                     </div>
                     <div class="btn-inputs">
                         <button class="btn-login" name="btn-login" >Log In</button>
@@ -34,23 +34,12 @@
             </div>
             <div class="signup-link">
                 <span>Don't have account?&nbsp</span>
-                <a href="#">Sign up</a> 
+                <a href="signupPage.php">Sign up</a> 
             </div>
         </div>
     </div>
-    <div class="footer" >
-        <img src="Assets/footer.png" alt="footer">
-        <div class="links">
-            <a href="#"><img src="Assets/facebook-logo.png" alt="facebook"></a>
-            <a href="#"><img src="Assets/vlu-logo.png" alt="vlu"></a>
-        </div>
-        <div class="info">
-            <span>
-                Helpful time management website for working and studying.
-            </span>   
-        </div>
-    </div>
-    <script src="https://kit.fontawesome.com/a52bd18fde.js" crossorigin="anonymous"></script>
+
+    <?php include_once("templates/footer.php"); ?>
 
 </body>
 </html>
