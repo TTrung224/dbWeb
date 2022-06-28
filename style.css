@@ -4,10 +4,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
 }
 /* Body */
 .main{
-    font-family: 'JetBrains Mono', monospace;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -20,7 +20,7 @@
 
 .main .slide-show img{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
 }
 .logo-login {
@@ -36,6 +36,9 @@
     height: auto;
 }
 .main .login-box .login-form{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     border-radius: 10px;
     border-style: hidden;
     padding: 10px;
@@ -59,20 +62,23 @@
 }
 
 .login-box .btn-inputs button{
-    color: #2d374e;
+    color: #ffffff;
     font-size: large; 
     width: 100%;
     padding: 4px;
-    margin: 8px 0px 0px 0px;
+    margin: 12px 0px 0px 0px;
     border-radius: 10px;
     border-style:hidden;
-    background-color: #5ec6db;
+    background-color: #34a6bd;
+}
+.login-box .btn-inputs button:hover{
+    background-color: #445379;
 }
 
+
 .login-box .signup-link{
-    font-size: large;
-    text-align:center;
     display: flex;
+    justify-content: center;
     color: rgb(255, 255, 255);
     border-style:hidden;
     border-width: 1px;
@@ -82,6 +88,7 @@
     background-color: #97dae7;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .login-box .signup-link a:link {
     color: #2d374e;
 }
