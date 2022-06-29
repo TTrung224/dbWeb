@@ -22,7 +22,7 @@
                 <img src="Assets/logo.png" alt="logo">
             </div>
             <div class="login-form">
-                <form action="#" method="post">
+                <form action="functions/login.php" method="post">
                     <div class="form-inputs">
                         <input type="text" id="email" placeholder="&#xf0e0; Email" name="email">
                         <input type="password" id="password" placeholder="&#xf084; Password" name="password">
