@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Assets/title-logo.png" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class='main'>
@@ -24,8 +24,8 @@
             <div class="login-form">
                 <form action="#" method="post">
                     <div class="form-inputs">
-                        <input type="text" id="email" placeholder="Email" name="email">
-                        <input type="password" id="password" placeholder="Password" name="password">
+                        <input type="text" id="email" placeholder="&#xf0e0; Email" name="email">
+                        <input type="password" id="password" placeholder="&#xf084; Password" name="password">
                     </div>
                     <div class="btn-inputs">
                         <button class="btn-login" name="btn-login" >Log In</button>

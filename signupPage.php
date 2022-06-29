@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Assets/title-logo.png" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class='main'>
@@ -24,11 +24,11 @@
             <div class="signup-form">
                 <form action="#" method="post">
                     <div class="form-inputs">
-                        <input type="text" id="email" placeholder="Enter email" name="email">
-                        <input type="password" id="password" placeholder="Enter password" name="password">
-                        <input type="password" id="re-password" placeholder="Re-type password" name="re-password">
-                        <input type="text" id="user-name" placeholder="Username" name="username">
-                        <input type="text" id="major" placeholder="Major/Job" name="major">
+                        <input type="text" id="email" placeholder="&#xf0e0; Enter email" name="email">
+                        <input type="password" id="password" placeholder="&#xf084; Enter password" name="password">
+                        <input type="password" id="re-password" placeholder="&#xf084; Re-type password" name="re-password">
+                        <input type="text" id="user-name" placeholder="&#xf007;  Username" name="username">
+                        <input type="text" id="major" placeholder="&#xf0b1; Major/Job" name="major">
                     </div>
                     <div class="btn-inputs">
                         <button class="btn-signup" name="btn-signup" >Sign up</button>
