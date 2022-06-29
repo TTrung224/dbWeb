@@ -35,6 +35,10 @@
                     </div>
                 </form>
             </div>
+            <div class="signup-link">
+                <span>Already have account? &nbsp</span>
+                <a href="loginPage.php">Login</a> 
+            </div>
         </div>
     </div>
 

@@ -90,7 +90,7 @@
 }
 
 
-.login-box .signup-link{
+.signup-link{
     font-size: 25px;    
     display: flex;
     justify-content: center;
@@ -104,10 +104,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.login-box .signup-link a {
+.signup-link a {
     color: #ffffff;
 }
-.login-box .signup-link a:hover {
+.signup-link a:hover {
     color: #2d374e;
 }
 /* Footer */
