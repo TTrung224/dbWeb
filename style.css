@@ -6,6 +6,29 @@
     box-sizing: border-box;
     font-family: 'Mitr','FontAwesome', sans-serif;
 }
+:root {
+    --color-primary:#34a6bd;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant: #445379;
+    --color-dark-variant:#677483;
+    --color-background:#97dae7;
+
+    --card-border-radius:2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+    --box-shadow:02rem 3rem var(--color-light);
+}
 /* Body */
 .main{
     position: absolute;
@@ -50,7 +73,7 @@
     border-radius: 10px;
     border-style: hidden;
     padding: 10px 20px;
-    background-color: #97dae7;
+    background-color: var(--color-background);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -74,7 +97,7 @@
 }
 .icon {
     min-width: 10px;
-    color: #34a6bd;
+    color: var(--color-primary);
 }
 .btn-inputs button{
     font-size: 25px;
@@ -84,7 +107,7 @@
     margin: 12px 0px 12px 0px;
     border-radius: 10px;
     border-style:hidden;
-    background-color: #34a6bd;
+    background-color: var(--color-primary);
 }
 .btn-inputs button:hover{
     background-color: #445379;
@@ -101,7 +124,7 @@
     border-radius: 10px;    
     padding: 10px;
     margin-top: 20px;
-    background-color: #97dae7;
+    background-color: var(--color-background);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -153,7 +176,7 @@ footer .links img{
 }
 footer .info {
     position: absolute;
-    color: white;
+    color: var(--color-white);
     justify-content: center;
     bottom: 0px;
 }
