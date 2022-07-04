@@ -22,7 +22,7 @@
     width: 100%;
     max-width: 800px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .login-box, .signup-box{
     width: 400px;
@@ -31,6 +31,7 @@
 .logo-login, .logo-signup {
     justify-content: center;
     display: flex;
+    margin-bottom: 15px;
 }
 
 .logo-login img, .logo-signup img{
@@ -62,7 +63,7 @@
 .form-inputs input{
     font-size: 25px;
     margin: 12px 0px 0px 0px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 10px;
     border-style: hidden;
 }
