@@ -16,7 +16,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             $connection = dbConnect();
             $query = "insert into acc (email, password, userName, major) values ('$email', '$hashedPassword', '$username', '$major');";
             if (mysqli_query($connection, $query)) {
-                header("Location: ../loginPage.php");
+                header("Location: ../loginPage.php?signupStatus=true");
             } else {
                 header("Location: ../signupPage.php?error=somethingWrong");
             }

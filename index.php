@@ -1,46 +1,56 @@
-
 <?php
-    // $connection = mysqli_connect("us-cdbr-east-05.cleardb.net", "b704e0507b7306", "41c3cb98", "heroku_f8f2d91b657802f");
-    // $connection = mysqli_connect("localhost", "root", "Tranquoctrung224!", "test");
+session_start();
+if(!isset($_SESSION['logedIn'])){
+    header("Location: loginPage.php");
+}
 
-    // if (mysqli_connect_error()) {
-    //     die("Database connection failed: " . mysqli_connect_error());
-    // } else{
-    //     echo "successfully connected";
-    // }
-
-    // $sql = "SELECT * FROM employee";
-    // $result = $connection -> query($sql);
-
-    // if ($result->num_rows > 0) {
-    //     // output data of each row
-    //     while($row = $result->fetch_assoc()) {
-    //         echo "id: " . $row["number"]. " - name: " . $row["name"].  " - position: ". $row["position"]. " - department: ". $row["department"]. " - supervisor: ". $row["supervisor"]. "<br>";
-    //     }
-    // } else {
-    //     echo "0 results";
-    // }
-    // $connection->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
-    <script src="js/mobiscroll.javascript.min.js"></script>
+    <title>Timeflow Login</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css3?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assets/title-logo.png" />
+    <!-- Style sheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input id="input-picker"/>
-    <script>
-        mobiscroll.datepicker('#input-picker', {
-            controls: ['calendar','time'],
-            touchUi: true,
-            timeFormat: 'H:mm'
-        });
-    </script>
+    <div class="dashboard-container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="Assets/logo.png" alt="web-logo">
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" >
+                    <span class="material-icons-sharp">grid_view</span>       
+                    <h3>Dashboard</h3>         
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">checklist</span>       
+                    <h3>To-do list</h3>         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">free_cancellation</span>       
+                    <h3>Deadlines</h3>
+                    <span class="upcoming-deadline-count">69</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">date_range</span>       
+                    <h3>Time table</h3>         
+                </a>
+                <a href="functions/logout.php">
+                    <span class="material-icons-sharp">logout</span>       
+                    <h3>Log out</h3>         
+                </a>
+            </div>
+        </aside>
+        <?php include_once("functions/upcomingDl.php"); ?>
+    </div>
 </body>
 </html>
