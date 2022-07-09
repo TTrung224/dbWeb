@@ -227,7 +227,7 @@ small {
 }
 
 .text-muted {
-    color: var(--color-info-dark);
+    color: var(--color-background);
 }
 
 p {
