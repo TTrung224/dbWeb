@@ -180,7 +180,7 @@ footer .links img{
     position: relative;
     display: flex;
     max-width: 25px;
-    width: 100%;
+    width: 98%;
     height: auto;
     border-radius: 5px;
     align-items: center;
@@ -249,10 +249,10 @@ p {
 
 .dashboard-container{
     display: grid;
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
+    grid-template-columns: 14rem auto 23rem 2rem;
 }
 aside{
     height: 100vh;
@@ -275,6 +275,7 @@ aside .logo img{
     height: auto;
 }
 /* ________ Side bar _________ */
+
 aside .sidebar {
     background: white;
     display: flex;
@@ -378,6 +379,7 @@ main .date input[type="date"] {
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    background-color: var(--color-warning);
 }
 .upcoming-deadlines .deadline-info .deadline-title {
     margin-bottom: 1rem;
