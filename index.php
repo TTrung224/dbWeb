@@ -1,9 +1,8 @@
 <?php
-session_start();
-if(!isset($_SESSION['logedIn'])){
-    header("Location: loginPage.php");
-}
-
+// session_start();
+// if(!isset($_SESSION['logedIn'])){
+//     header("Location: loginPage.php");
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,19 +18,20 @@ if(!isset($_SESSION['logedIn'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="dashboard-container">
+    <div class="dashboard-container" style="background: url(Assets/mainbackground.jpeg)">
         <aside>
             <div class="top">
                 <div class="logo">
                     <img src="Assets/logo.png" alt="web-logo">
                 </div>
             </div>
+            
             <div class="sidebar">
-                <a href="#" >
+                <a href="#" class="active">
                     <span class="material-icons-sharp">grid_view</span>       
                     <h3>Dashboard</h3>         
                 </a>
-                <a href="#" class="active">
+                <a href="#">
                     <span class="material-icons-sharp">checklist</span>       
                     <h3>To-do list</h3>         
                 </a>
@@ -67,11 +67,33 @@ if(!isset($_SESSION['logedIn'])){
 
          <div class="upcoming-deadlines">
             <h1>Upcoming deadlines!</h1>
+            <div class="deadline-info" style="background: #34a6bd;">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+            </div>
+            <div class="deadline-info">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+                </p>
+            </div>
+            <div class="deadline-info">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+                </p>
+            </div>
             <?php include("functions/upcomingDl.php")?>
          </div>
 
 
-        <?php include_once("functions/upcomingDl.php"); ?>
+        <?php 
+            // include_once("functions/upcomingDl.php"); 
+        ?>
 
     </div>
     <script src="dateScript.js"></script>
