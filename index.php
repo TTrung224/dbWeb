@@ -51,7 +51,7 @@
             </div>
         </aside>
 
-        <!------------------ End Sizebar ----------------->
+        <!------------------ End Sidebar ----------------->
         <main>
             <div class="background" style="background: url(Assets/mainbackground.jpeg)"></div>
             <h1>Dashboard</h1>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="welcome">
-                <h2 class="name"> Welcome, Hoang</h2>
+                <h2 class="name"> Welcome, <?=$_SESSION['userInfo']['username']?></h2>
             </div>
         </main>
          <!------------------ End Main ----------------->
@@ -88,6 +88,7 @@
                     <h3 class="text-muted">Homework</h3>
                 </p>
             </div>
+            <?php include("functions/upcomingDl.php")?>
          </div>
 
 

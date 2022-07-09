@@ -54,7 +54,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             header("Location: ../loginPage.php?error=emailOrPasswordError");
         } else {
             $_SESSION["logedIn"] = true;
-            $_SESSION["userInfo"] = ["email" => $email];
+            $_SESSION["userInfo"] = ["email" => $email, "username" => $account['userName']];
             header("Location: ../index.php");
         }
     } else{

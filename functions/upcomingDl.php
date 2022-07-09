@@ -2,11 +2,22 @@
 require("functions.php");
 $email = $_SESSION['userInfo']['email'];
 $connection = dbConnect();
-$query = "SELECT * FROM deadline WHERE email='$email'";
+$query = "SELECT * FROM deadline d, category c WHERE d.email='$email' AND d.categoryId=c.id";
 $result = mysqli_query($connection,$query);
+$result = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-while ($row = mysqli_fetch_assoc($result)) {
-    echo $row["title"];
-    echo $row["info"];
-    echo $row["deadline"];
+$date = array_column($result, 'deadline');
+array_multisort($date, SORT_ASC, $result);
+
+foreach ($result as $row){
+    ?>
+    
+    <div class="deadline-info" style="background: <?=$row['color']?>;">
+        <div class="deadline-title">
+            <h2><?=$row['title']?></h2>
+        </div> 
+        <h3 class="text-muted"><?=$row['name']?></h3>
+    </div>
+
+<?php
 }
