@@ -51,10 +51,10 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         }
 
         if($validated == false){
-            header("Location: ../login_page.php?error=emailOrPasswordError");
+            header("Location: ../loginPage.php?error=emailOrPasswordError");
         } else {
             $_SESSION["logedIn"] = true;
-            // $_SESSION["userInfo"] = ["email" => $data[0], "username" => $data[2], "realname" => $data[3], "pfp-path" => $data[4], "bio" => $data[5]];
+            $_SESSION["userInfo"] = ["email" => $email];
             header("Location: ../index.php");
         }
     } else{

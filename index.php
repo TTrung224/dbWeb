@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['logedIn'])){
+    header("Location: loginPage.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +44,13 @@
                     <span class="material-icons-sharp">date_range</span>       
                     <h3>Time table</h3>         
                 </a>
-                <a href="#">
+                <a href="functions/logout.php">
                     <span class="material-icons-sharp">logout</span>       
                     <h3>Log out</h3>         
                 </a>
             </div>
         </aside>
+
         <!------------------ End Sizebar ----------------->
         <main>
             <div class="background" style="background: url(Assets/mainbackground.jpeg)"></div>
@@ -82,6 +90,9 @@
                 </p>
             </div>
          </div>
+
+
+        <?php include_once("functions/upcomingDl.php"); ?>
 
     </div>
 </body>
