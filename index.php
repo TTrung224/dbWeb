@@ -57,7 +57,6 @@ if(!isset($_SESSION['logedIn'])){
             <h1>Dashboard</h1>
 
             <div class="date">
-                <input type="date">
             </div>
 
             <div class="welcome">
@@ -75,5 +74,6 @@ if(!isset($_SESSION['logedIn'])){
         <?php include_once("functions/upcomingDl.php"); ?>
 
     </div>
+    <script src="dateScript.js"></script>
 </body>
 </html>
