@@ -43,6 +43,46 @@
                 </a>
             </div>
         </aside>
+        <!------------------ End Sizebar ----------------->
+        <main>
+            <div class="background" style="background: url(Assets/mainbackground.jpeg)"></div>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="welcome">
+                <h2 class="name"> Welcome, Hoang</h2>
+            </div>
+        </main>
+         <!------------------ End Main ----------------->
+
+         <div class="upcoming-deadlines">
+            <h1>Upcoming deadlines!</h1>
+            <div class="deadline-info" style="background: #34a6bd;">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+                </p>
+            </div>
+            <div class="deadline-info">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+                </p>
+            </div>
+            <div class="deadline-info">
+                    <div class="deadline-title">
+                        <h2>Finish final task</h2>
+                    </div> 
+                    <h3 class="text-muted">Homework</h3>
+                </p>
+            </div>
+         </div>
+
     </div>
 </body>
 </html>
