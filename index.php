@@ -1,8 +1,8 @@
 <?php
-// session_start();
-// if(!isset($_SESSION['logedIn'])){
-//     header("Location: loginPage.php");
-// }
+session_start();
+if(!isset($_SESSION['logedIn'])){
+    header("Location: loginPage.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +92,7 @@
 
 
         <?php 
-            // include_once("functions/upcomingDl.php"); 
+            include_once("functions/upcomingDl.php"); 
         ?>
 
     </div>

@@ -5,7 +5,7 @@ function dbConnect(){
     $password = "41c3cb98";
     $dbname = "heroku_f8f2d91b657802f";
 
-    $connection = mysqli_connect("localhost", "root", "Tranquoctrung224!", "test");
+    $connection = mysqli_connect("localhost", "root", "Hoangpro02", "test");
 
     // $connection = new mysqli($servername, $username, $password, $dbname);
 
