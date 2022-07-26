@@ -23,3 +23,28 @@ function formatInput($data){
     $data = strip_tags($data);
     return $data;
 }
+
+function displayTask($connection){
+    $email = $_SESSION['userInfo']['email'];
+    $query = "SELECT * FROM toDo t WHERE t.email='$email'";
+    $result = mysqli_query($connection,$query);
+    $result = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $id = array_column($result, 'id');
+    array_multisort($id, SORT_ASC, $result);
+    
+    foreach ($result as $row){
+        ?>
+            <div class="task">
+                <div class="content">
+                    <input type="text" class="text" value="<?=$row['title']?>" readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">EDIT</button>
+                    <button class="delete">DELETE</button>
+                </div>
+            </div>
+    <?php
+    }
+    return null;
+}

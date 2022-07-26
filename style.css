@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     outline: 0;
-    appearance: none;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -152,6 +151,7 @@ footer {
     left: 0;
     right: 0;
     height: 100px;
+    z-index: 1;
 }
 
 footer img {
@@ -256,7 +256,7 @@ p {
 }
 aside{
     height: 100vh;
-    background: var(--color-primary);
+    background: var(--color-white);
 }
 
 aside .top{
@@ -273,6 +273,7 @@ aside .logo {
 aside .logo img{
     width: 14rem;
     height: auto;
+    padding: 1rem 1rem;
 }
 /* ________ Side bar _________ */
 
@@ -386,4 +387,132 @@ main .date input[type="date"] {
 }
 .upcoming-deadlines .deadline-info:hover {
     box-shadow: none;
+}
+
+/* _______________Todo List page____________ */
+.todo-container {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem 2rem;
+}
+
+.todo-input {
+    display: inline-block;
+}
+
+.todo-container input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.todo-input {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#new-task-form {
+    max-width: 700px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 2rem;
+    justify-content: center;
+    display: flex;
+}
+
+#new-task-form select {
+    border-radius: 1rem;
+}
+
+#category {
+    font-size: large;
+    appearance: menu;
+    margin: 0rem 1rem;
+}
+
+#new-task-input  {
+    margin: 0 auto;
+    width: 40rem;
+    background-color: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: large;
+    color: var(--color-dark);
+}
+
+#new-task-input::placeholder {
+    color: var(--color-dark-variant);
+}
+
+#new-task-submit {
+    color: var(--color-white);
+    font-size: large;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active {
+    opacity: 0.6;
+}
+
+.todo-container section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary-variant);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+.tasks .task .content input{ 
+    color: var(--color-info-light);
+    font-size: large;
+    width: 100%;
+    display: block;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: medium;
+    font-weight: 700;
+    transition: 0.4s;
+
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit {
+    color: var(--color-primary);
+}
+
+.task .actions .delete {
+    color: var(--color-danger);
 }

@@ -7,7 +7,7 @@ if(!isset($_SESSION['logedIn'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Timeflow Login</title>
+    <title>Dashboard</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,11 @@ if(!isset($_SESSION['logedIn'])){
             </div>
             
             <div class="sidebar">
-                <a href="#" class="active">
+                <a href="index.php" class="active">
                     <span class="material-icons-sharp">grid_view</span>       
                     <h3>Dashboard</h3>         
                 </a>
-                <a href="#">
+                <a href="todo.php">
                     <span class="material-icons-sharp">checklist</span>       
                     <h3>To-do list</h3>         
                 </a>
@@ -89,13 +89,10 @@ if(!isset($_SESSION['logedIn'])){
             </div>
             <?php include("functions/upcomingDl.php")?>
          </div>
-
-
-        <?php 
-            include_once("functions/upcomingDl.php"); 
-        ?>
-
     </div>
     <script src="dateScript.js"></script>
+    <?php
+        include("templates/footer.php")
+    ?>
 </body>
 </html>
