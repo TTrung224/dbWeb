@@ -6,9 +6,9 @@ function dbConnect(){
     $dbname = "heroku_f8f2d91b657802f";
 
     // $connection = mysqli_connect("localhost", "root", "Hoangpro02", "test");
-    $connection =  new mysqli("localhost", "root", "Hoangpro02", "test");
+    // $connection =  new mysqli("localhost", "root", "Hoangpro02", "test");
 
-    // $connection = new mysqli($servername, $username, $password, $dbname);
+    $connection = new mysqli($servername, $username, $password, $dbname);
 
     if ($connection->connect_error) {
         die("Database connection failed: " . $connection->connect_error);
