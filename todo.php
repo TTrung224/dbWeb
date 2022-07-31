@@ -53,14 +53,23 @@ include("functions/functions.php");
         </aside>
         <main>
             <h1>To-do List</h1>
-            <div class="todo-input">
+            <div class="todo-input" id="todo-form">
                 <form action="functions/todo-add.php" method="post" id="new-task-form">
                     <input type="text" name="title" id="new-task-input" placeholder="What task do you need to do?">
                     <select name="categoryId" id="category" required>
                         <option value="" disabled selected>Choose category</option>
                         <?php include("functions/edit-todo.php") ?>
+                        <option><a href="index.php">add new</a></option>
                     </select>
                     <input type="submit" id="new-task-submit" value="Add">
+                </form>
+            </div>
+            <div class="todo-input create-cat-form non-display">
+                <form action="functions/addCat.php" method="post" id="new-task-form">
+                    <input type="text" name="category" id="new-task-input" placeholder="Name of category">
+                    <label for="cat-color-chooser">Color for your category:</label>
+                    <input type="color" name="color" id="cat-color-chooser" placeholder="Color for your category">
+                    <input type="submit" id="new-task-submit" value="Create">
                 </form>
             </div>
             <section class="todo-list">
@@ -76,5 +85,6 @@ include("functions/functions.php");
     <?php
         include("templates/footer.php")
     ?>
+    <script src="toDoPage.js"></script>
 </body>
 </html>

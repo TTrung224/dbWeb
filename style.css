@@ -468,6 +468,26 @@ main .date input[type="date"] {
     opacity: 0.6;
 }
 
+.todo-input #cat-color-chooser {
+    height: 40px;
+    width: 100px;
+    align-content: center;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.create-cat-form label{
+    margin-top: 5px;
+}
+
+.create-cat-form {
+    margin-top: 10px;
+}
+
+.non-display {
+    display: none;
+}
+
 .todo-container section {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -513,7 +533,6 @@ main .date input[type="date"] {
     font-size: medium;
     font-weight: 700;
     transition: 0.4s;
-
 }
 
 .task .actions button:hover {
