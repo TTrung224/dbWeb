@@ -29,7 +29,7 @@
 
     --card-padding:1.8rem;
     --padding-1:1.2rem;
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0.5rem 1.5rem 5rem var(--color-info-dark);
 }
 html {
     font-size: 14px;
@@ -483,6 +483,18 @@ main .date input[type="date"] {
     padding: 1rem;
     border-radius: 1rem;
     margin: 1rem auto;
+    transform: translateZ(0);
+    box-shadow: var(--box-shadow);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.task:hover,
+.task:focus,
+.task:active {
+    transform: scale(1.05);
 }
 
 .tasks .task .content input{ 
