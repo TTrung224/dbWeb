@@ -58,7 +58,7 @@ include("functions/functions.php");
                     <input type="text" name="title" id="new-task-input" placeholder="What task do you need to do?">
                     <select name="categoryId" id="category" required>
                         <option value="" disabled selected>Choose category</option>
-                        <?php include("functions/edit-todo.php") ?>
+                        <?php include("functions/listCat.php") ?>
                         <option><a href="index.php">add new</a></option>
                     </select>
                     <input type="submit" id="new-task-submit" value="Add">

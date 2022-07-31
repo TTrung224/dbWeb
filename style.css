@@ -520,6 +520,10 @@ main .date input[type="date"] {
     transform: scale(1.05);
 }
 
+.tasks .task .content {
+    width: 600px;
+}
+
 .tasks .task .content input{ 
     color: var(--color-info-light);
     font-size: large;
@@ -527,7 +531,12 @@ main .date input[type="date"] {
     display: block;
 }
 
-.task .actions button {
+.task .content #task-edit-form .save-edit{
+    width: auto;
+    right:0;
+}
+
+.task .actions button, .task .content #task-edit-form .save-edit {
     cursor: pointer;
     margin: 0 0.5rem;
     font-size: medium;
@@ -535,18 +544,31 @@ main .date input[type="date"] {
     transition: 0.4s;
 }
 
-.task .actions button:hover {
+.task #task-edit-form {
+    display: flex;
+}
+
+.task .actions button:hover, .task .content #task-edit-form .save-edit:hover {
     opacity: 0.8;
 }
 
-.task .actions button:active {
+.task .actions button:active, .task .content #task-edit-form .save-edit:active {
     opacity: 0.6;
 }
 
-.task .actions .edit {
+.task .actions .edit, .task .content #task-edit-form .save-edit{
     color: var(--color-primary);
 }
 
 .task .actions .delete {
     color: var(--color-danger);
+}
+
+#task-edit-form .non-display{
+    display: none;
+}
+
+.task .content #task-edit-form .editable{
+    background-color: white;
+    color: #000000;
 }

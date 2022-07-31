@@ -37,10 +37,14 @@ function displayTask($connection){
         ?>
             <div class="task">
                 <div class="content">
-                    <input type="text" class="text" value="<?=$row['title']?>" readonly>
+                    <form action="functions/updateTodo.php" method="post" id="task-edit-form">
+                        <input type="text" name="todo" id="todo-<?=$row['id']?>" class="text task-content" value="<?=$row['title']?>" readonly>
+                        <input type="hidden" name="id" value="<?=$row['id']?>">
+                        <input type="submit" id="save-edit-<?=$row['id']?>" class="save-edit non-display" value="SAVE">
+                    </form>
                 </div>
                 <div class="actions">
-                    <button class="edit">EDIT</button>
+                    <button class="edit" id="edit<?=$row['id']?>">EDIT</button>
                     <button class="delete">DELETE</button>
                 </div>
             </div>
