@@ -67,26 +67,6 @@ if(!isset($_SESSION['logedIn'])){
 
          <div class="upcoming-deadlines">
             <h1>Upcoming deadlines!</h1>
-            <div class="deadline-info" style="background: #34a6bd;">
-                    <div class="deadline-title">
-                        <h2>Finish final task</h2>
-                    </div> 
-                    <h3 class="text-muted">Homework</h3>
-            </div>
-            <div class="deadline-info">
-                    <div class="deadline-title">
-                        <h2>Finish final task</h2>
-                    </div> 
-                    <h3 class="text-muted">Homework</h3>
-                </p>
-            </div>
-            <div class="deadline-info">
-                    <div class="deadline-title">
-                        <h2>Finish final task</h2>
-                    </div> 
-                    <h3 class="text-muted">Homework</h3>
-                </p>
-            </div>
             <?php include("functions/upcomingDl.php")?>
          </div>
     </div>

@@ -34,8 +34,8 @@ if(isset($_SESSION['logedIn'])){
             <div class="login-form">
                 <form action="functions/login.php" method="post">
                     <div class="form-inputs">
-                        <input type="text" id="email" placeholder="&#xf0e0; Email" name="email">
-                        <input type="password" id="password" placeholder="&#xf084; Password" name="password">
+                        <input type="text" id="email" placeholder="&#xf0e0; Email" name="email" required>
+                        <input type="password" id="password" placeholder="&#xf084; Password" name="password" required>
                     </div>
                     <div class="btn-inputs">
                         <button class="btn-login" name="btn-login" >Log In</button>

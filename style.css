@@ -37,8 +37,7 @@ html {
 /* Body */
 body {
     width: 100vw;
-    height: 100vh;
-}
+    height: 100vh;}
 /* =============== Login - signup page =============== */
 .main{
     position: absolute;
@@ -152,6 +151,7 @@ footer {
     right: 0;
     height: 100px;
     z-index: 1;
+    padding-top: 100px;
 }
 
 footer img {
@@ -308,7 +308,7 @@ aside .sidebar a span{
 
 aside .sidebar a:last-child{
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 2rem;
     width: 100%;
 }
 
@@ -384,6 +384,9 @@ main .date input[type="date"] {
 }
 .upcoming-deadlines .deadline-info .deadline-title {
     margin-bottom: 1rem;
+}
+.upcoming-deadlines .deadline-info .category {
+    color: var(--color-dark);   
 }
 .upcoming-deadlines .deadline-info:hover {
     box-shadow: none;

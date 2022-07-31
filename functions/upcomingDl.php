@@ -16,7 +16,7 @@ foreach ($result as $row){
         <div class="deadline-title">
             <h2><?=$row['title']?></h2>
         </div> 
-        <h3 class="text-muted"><?=$row['name']?></h3>
+        <h3 class="category"><?=$row['name']?></h3>
     </div>
 
 <?php
