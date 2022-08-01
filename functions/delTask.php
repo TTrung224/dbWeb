@@ -13,12 +13,12 @@ if(isset($_GET['id'])){
             echo '<script language="javascript">';
             echo 'alert("Deleted successfully")';
             echo '</script>';
-            header("Refresh: 5; URL=../toDo.php");
+            header("Refresh: 3; URL=../todo.php");
           } else {
             echo '<script language="javascript">';
             echo 'alert("Deleted failed")';
             echo '</script>';
-            header("Refresh: 5; URL=../toDo.php");
+            header("Refresh: 3; URL=../todo.php");
           }
     } 
 
