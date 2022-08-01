@@ -35,7 +35,7 @@ if(!isset($_SESSION['logedIn'])){
                     <span class="material-icons-sharp">checklist</span>       
                     <h3>To-do list</h3>         
                 </a>
-                <a href="#">
+                <a href="deadline.php">
                     <span class="material-icons-sharp">free_cancellation</span>       
                     <h3>Deadlines</h3>
                     <span class="upcoming-deadline-count">69</span>

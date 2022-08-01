@@ -393,7 +393,7 @@ main .date input[type="date"] {
 }
 
 /* _______________Todo List page____________ */
-.todo-container {
+.todo-container, .deadline-container {
     display: grid;
     width: 100%;
     margin: 0 auto;
@@ -401,23 +401,23 @@ main .date input[type="date"] {
     grid-template-columns: 14rem auto 23rem 2rem;
 }
 
-.todo-input {
+.todo-input, .deadline-input {
     display: inline-block;
 }
 
-.todo-container input, button {
+.todo-container input, button, .deadline-container input, button {
     appearance: none;
     border: none;
     outline: none;
     background: none;
 }
-.todo-input {
+.todo-input, .deadline-input {
     display: flex;
     justify-content: center;
     
 }
 
-#new-task-form {
+#new-task-form, #new-deadline-form {
     max-width: 700px;
     background-color: var(--color-white);
     padding: 1rem;
@@ -426,7 +426,7 @@ main .date input[type="date"] {
     display: flex;
 }
 
-#new-task-form select {
+#new-task-form select, #new-deadline-form select {
     border-radius: 1rem;
 }
 
@@ -436,7 +436,7 @@ main .date input[type="date"] {
     margin: 0rem 1rem;
 }
 
-#new-task-input  {
+#new-task-input, #new-deadline-input {
     margin: 0 auto;
     width: 40rem;
     background-color: none;
@@ -447,11 +447,11 @@ main .date input[type="date"] {
     color: var(--color-dark);
 }
 
-#new-task-input::placeholder {
+#new-task-input::placeholder, #new-deadline-input::placeholder {
     color: var(--color-dark-variant);
 }
 
-#new-task-submit {
+#new-task-submit, #new-deadline-submit{
     color: var(--color-white);
     font-size: large;
     font-weight: 700;
@@ -460,15 +460,15 @@ main .date input[type="date"] {
     padding: 1rem;
 }
 
-#new-task-submit:hover {
+#new-task-submit:hover, #new-deadline-submit:hover {
     opacity: 0.8;
 }
 
-#new-task-submit:active {
+#new-task-submit:active, #new-deadline-submit:active {
     opacity: 0.6;
 }
 
-.todo-input #cat-color-chooser {
+.todo-input #cat-color-chooser, .deadline-input #cat-color-chooser {
     height: 40px;
     width: 100px;
     align-content: center;
@@ -488,7 +488,7 @@ main .date input[type="date"] {
     display: none;
 }
 
-.todo-container section {
+.todo-container section, .deadline-container section {
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
@@ -542,6 +542,15 @@ main .date input[type="date"] {
     font-size: medium;
     font-weight: 700;
     transition: 0.4s;
+}
+
+.task .actions a {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: medium;
+    font-weight: 700;
+    transition: 0.4s;
+    color: var(--color-danger);
 }
 
 .task #task-edit-form {
