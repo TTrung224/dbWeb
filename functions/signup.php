@@ -21,13 +21,10 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                 header("Location: ../signupPage.php?error=somethingWrong");
             }
         } else {
-            // header("Location: ../signupPage.php?error=wrongPasswordRetype");
             echo '<script language="javascript">';
             echo "alert('Repassword not match! Return to Signup after 5sec')";
             echo '</script>';
             header("Refresh: 5; URL=../signupPage.php");
         }    
-    } else{
-        header("Location: ../signupPage.php?error=fullFillError");
     }
 }

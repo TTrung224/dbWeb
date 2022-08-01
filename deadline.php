@@ -89,6 +89,6 @@ include("functions/functions.php");
     <?php
         include("templates/footer.php");
     ?>
-    <script src="toDoPage.js"></script>
+    <script src="deadlinePage.js"></script>
 </body>
 </html>
