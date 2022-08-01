@@ -419,7 +419,16 @@ main .date input[type="date"] {
 #new-deadline-form .title-row {
     display: flex;
 }
-#new-task-form, #new-deadline-form {
+#new-task-form {
+    max-width: 700px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 2rem;
+    justify-content: center;
+    display: flex;
+}
+
+#new-deadline-form {
     max-width: 700px;
     background-color: var(--color-white);
     padding: 1rem;
