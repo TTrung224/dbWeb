@@ -59,7 +59,7 @@ include("functions/functions.php");
                     <select name="categoryId" id="category" required>
                         <option value="" disabled selected>Choose category</option>
                         <?php include("functions/listCat.php") ?>
-                        <option><a href="index.php">add new</a></option>
+                        <option><a href="index.php">..add new</a></option>
                     </select>
                     <input type="submit" id="new-task-submit" value="Add">
                 </form>
@@ -83,7 +83,8 @@ include("functions/functions.php");
         </main>
     </div>
     <?php
-        include("templates/footer.php")
+        include("templates/footer.php");
+
     ?>
     <script src="toDoPage.js"></script>
 </body>

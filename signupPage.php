@@ -34,11 +34,11 @@ if(isset($_SESSION['logedIn'])){
             <div class="signup-form">
                 <form action="functions/signup.php" method="post">
                     <div class="form-inputs">
-                        <input type="text" id="email" placeholder="&#xf0e0; Enter email" name="email">
-                        <input type="password" id="password" placeholder="&#xf084; Enter password" name="password">
-                        <input type="password" id="re-password" placeholder="&#xf084; Re-type password" name="re-password">
-                        <input type="text" id="user-name" placeholder="&#xf007;  Username" name="username">
-                        <input type="text" id="major" placeholder="&#xf0b1; Major/Job" name="major">
+                        <input type="text" id="email" placeholder="&#xf0e0; Enter email" name="email" required>
+                        <input type="password" id="password" placeholder="&#xf084; Enter password" name="password" required>
+                        <input type="password" id="re-password" placeholder="&#xf084; Re-type password" name="re-password" required>
+                        <input type="text" id="user-name" placeholder="&#xf007;  Username" name="username" required>
+                        <input type="text" id="major" placeholder="&#xf0b1; Major/Job" name="major" required>
                     </div>
                     <div class="btn-inputs">
                         <button class="btn-signup" name="btn-signup" >Sign up</button>

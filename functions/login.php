@@ -51,7 +51,11 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         }
 
         if($validated == false){
-            header("Location: ../loginPage.php?error=emailOrPasswordError");
+            // header("Location: ../loginPage.php?error=emailOrPasswordError");
+            echo '<script language="javascript">';
+            echo 'alert("Incorrect email/password! Return to Login after 5sec")';
+            echo '</script>';
+            header("Refresh: 5; URL=../loginPage.php");
         } else {
             $_SESSION["logedIn"] = true;
             $_SESSION["userInfo"] = ["email" => $email, "username" => $account['userName']];

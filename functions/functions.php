@@ -45,7 +45,7 @@ function displayTask($connection){
                 </div>
                 <div class="actions">
                     <button class="edit" id="edit<?=$row['id']?>">EDIT</button>
-                    <button class="delete">DELETE</button>
+                    <a href="functions/delTask.php?id= <?php echo $row["id"]?>">DELETE</a>
                 </div>
             </div>
     <?php
