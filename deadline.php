@@ -54,14 +54,16 @@ include("functions/functions.php");
         <main>
             <h1>Deadline List</h1>
             <div class="deadline-input" id="deadline-form">
-                <form action="functions/todo-add.php" method="post" id="new-deadline-form">
-                    <input type="text" name="title" id="new-deadline-input" placeholder="What deadline do you need to finish?">
-                    <select name="categoryId" id="category" required>
-                        <option value="" disabled selected>Choose category</option>
-                        <?php include("functions/listCat.php") ?>
-                        <option><a href="index.php">..add new</a></option>
-                    </select>
-                    <input type="submit" id="new-deadline-submit" value="Add"><br>
+                <form action="functions/deadlineAdd.php" method="post" id="new-deadline-form">
+                    <div class="title-row">
+                        <input type="text" name="title" id="new-deadline-input" placeholder="What deadline do you need to finish?">
+                        <select name="categoryId" id="category" required>
+                            <option value="" disabled selected>Choose category</option>
+                            <?php include("functions/listCat.php") ?>
+                            <option><a href="index.php">..add new</a></option>
+                        </select>
+                        <input type="submit" id="new-deadline-submit" value="Add"><br>
+                    </div>
                     <input type="text" name="info" id="new-deadline-info" placeholder="Description">
                     <input type="datetime-local" name="date" id="date">
                 </form>
@@ -74,19 +76,18 @@ include("functions/functions.php");
                     <input type="submit" id="new-task-submit" value="Create">
                 </form>
             </div>
-            <!-- <section class="deadline-list">
+            <section class="deadline-list">
                 <h2>Deadlines</h2>
-                <div class="deadlines">
+                <div class="upcoming-deadlines">
                     <?php
-                        // displayTask($connection);
+                        displayDeadline($connection);
                     ?> 
                 </div>
-            </section> -->
+            </section>
         </main>
     </div>
     <?php
         include("templates/footer.php");
-
     ?>
     <script src="toDoPage.js"></script>
 </body>

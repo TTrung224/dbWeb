@@ -20,4 +20,3 @@ btns.forEach(btn => {
         document.querySelector(save).classList.remove("non-display");
     });
 });
-

@@ -416,14 +416,20 @@ main .date input[type="date"] {
     justify-content: center;
     
 }
-
+#new-deadline-form .title-row {
+    display: flex;
+}
 #new-task-form, #new-deadline-form {
     max-width: 700px;
     background-color: var(--color-white);
     padding: 1rem;
     border-radius: 2rem;
     justify-content: center;
-    display: flex;
+    display: inline-block;
+}
+
+#new-deadline-info {
+    padding-left: 1rem;
 }
 
 #new-task-form select, #new-deadline-form select {
