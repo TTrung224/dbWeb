@@ -71,8 +71,19 @@ function displayDeadline($connection){
                 <h2><?=$row['deadline']?></h2>
             </div> 
             <h3 class="category"><?=$row['name']?></h3>
+            <div class="actions">
+                    <a href="functions/delDeadline.php?id= <?php echo $row["id"]?>" onclick="return confirm('Are you sure?')">DELETE</a>
+                </div>
         </div>
 
     <?php
     }
+}
+
+function displaycount($connection){
+    $email = $_SESSION['userInfo']['email'];
+
+    $query = "SELECT * FROM deadline d, category c WHERE d.email='$email' AND d.categoryId=c.id";
+    $result = mysqli_query($connection,$query);
+    $result = mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
